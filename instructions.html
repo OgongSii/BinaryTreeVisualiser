@@ -73,25 +73,25 @@
                         <div class="section"> 
                             <h1 id="instructions" class="anchor left_clear">Instructions</h1>
                             <p>
-                                There you find how to use <strong>BinaryTreeVisualiser</strong>.
+                                여기에서 <strong>이진트리 시각와</strong>의 사용법을 숙지하실 수 있습니다.
                                 <br/>
-                                Application is consisted of two pages.
-                                <a href="binary-heap.html">At the first one</a> you find <strong>binary heap + priority queue</strong> implementation 
-                                (random binary heap, build binary heap, insert, delete, extract max, get max, heap sort).
-                                <a href="binary-heap.html">At the other one</a> you find <strong>binary search tree</strong> implementation 
-                                (random binary search tree, insert, find, delete, get max, get min, get predecessor, get successor, to preorder array, to inorder (sorted) array, to postorder array).
+                                사용법은 두 가지로 나뉩니다
+                                <a href="binary-heap.html">여기에서는</a> <strong>바이너리 힙 + 우선순위 큐</strong>
+                                (랜덤 바이너리 힙, 바이너리 힙 빌드, 삽입, 삭제, 최대 추출, 최대 가져오기, 힙 정렬)을 사용 할 수 있습니다.
+                                <a href="binary-heap.html">여기에서는</a> <strong>이진 탐색 트리</strong>
+                                (이진 탐색 트리, 삽입, 검색, 삭제, 최대값 가져오기, 최소값 가져옿기, 선행자 가져오기, 후임자 가져오기, to preorder array, to inorder (sorted) array, to postorder array).
                                 <br/>
-                                If you don't know what a binary search tree, a binary heap or any of listed algorithms means, visit <a href="pseudocodes.html">this section</a>.
+                                이진 탐색 트리, 이진 힙 또는 나열된 알고리즘이 무엇을 의미하는지 잘 모르겠으면 <a href="pseudocodes.html">여기</a> 를 방문하세요.
                                 <br/>
-                                See meanings of used <a href="#graphic_elements">graphic elements</a> to understand animations
-                                and read what <a href="#controls">control buttons</a> do for easier work with the application.
+                                표기를 이해하기 힘드시면 <a href="#graphic_elements">Icon</a> 를 참고하세요.
+                                표기릐 뜻을 알고싶으시면 <a href="#controls">Control</a> 를 참고하세요.
                             </p>
 
 
                             <div class="subsection">
                                 <h2 id="graphic_elements" class="anchor left_clear">Graphic elements</h2>
                                 <p>
-                                    There are listed all graphic elements used in this application and their meanings.
+                                    사용된 모든 표기를 확인할 수 있습니다.
                                 </p>
                                 <table class="instructions">    
                                     <thead>
@@ -106,7 +106,7 @@
                                             <td class="graphicElement">
                                                 <img src="images/instructions/node.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Node</td>
+                                            <td class="meaning">( 노드 ) Node</td>
                                             <td>
                                                 A node with his value.
                                             </td>
@@ -115,84 +115,80 @@
                                             <td class="graphicElement">
                                                 <img src="images/instructions/selected_node.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Selected node</td>
+                                            <td class="meaning">선택된 노드</td>
                                             <td>
-                                                Selected node is highlighted with a red stroke. You can select any node by clicking on it.
+                                                선택한 노드는 빨간색 선으로 강조 표시됩니다. 노드를 클릭하면 아무 노드나 선택할 수 있습니다.
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/edge.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Edge</td>
+                                            <td class="meaning">( 엣지 ) Edge</td>
                                             <td>
-                                                An edge is a reference from one node to another.
-                                                Referenced node is called child of referring node.
-                                                Referring node is called parent of referenced node.
+                                                노드와 노드 사이를 이어주는 선
                                             </td>
                                         </tr>                                
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/parent_with_children.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Parent and his children</td>
+                                            <td class="meaning">자식 노드</td>
                                             <td>
-                                                In binary trees there are maximum two children of a node - left child and right child.
+                                                부모노드가 있는 노드
                                             </td>
                                         </tr>                                
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/comparison_signs.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Comparison signs</td>
+                                            <td class="meaning">부등호</td>
                                             <td>
-                                                Very often algorithms compare two nodes (their values). 
-                                                In that case one of this sign will be shown in the middle of them.
+                                                두 노드의 값을 비교합니다.
+                                                두 노드의 값을 비교하는경우 부등호를 사용합니다.
                                             </td>
                                         </tr>                                                                
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/continue_in_parent,left_child,right_child.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Continue in parent/<wbr/>left&nbsp;child/<wbr/>right child</td>
+                                            <td class="meaning">자식노드에서 게속됨/<wbr/>왼쪽&nbsp;자식노드/<wbr/>오른쪽 자식노드</td>
                                             <td>
-                                                Algorithms usually traverse a tree or recursively call themselves on one child of just processing node.
-                                                These graphic elements will show you which node is next in line.
+                                                자식노드의 부모를 가르킴
                                             </td>
                                         </tr>  
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/no_left,right_child.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">No left/<wbr/>right child</td>
+                                            <td class="meaning">왼쪽/<wbr/>오른쪽 자식노드 없음</td>
                                             <td>
-                                                A node do not have left/right child.
+                                                왼쪽/오른쪽 자식노드가 존재하지않음
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="graphicElement"><img src="images/instructions/enter,leave_tree.png" alt="node"/></td>
-                                            <td class="meaning">Enter/<wbr/>Leave tree</td>
+                                            <td class="meaning">트리 들어가기/<wbr/>트리 나가기</td>
                                             <td>
-                                                A start/end visualisation of an algorithms that traverse a tree.
+                                                트리 말고리즘의 시작/종료 알림
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/came_from_the_left,right.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Came from left/<wbr/>right child</td>
+                                            <td class="meaning">왼쪽/<wbr/>오른쪽 자식에서 유래</td>
                                             <td>
-                                                Sometimes it is important if an algorithm came from left or right child.
-                                                These arrows indicate that the condition is satisfied.
+                                                왼쪽 또는 오른쪽 자식에서 유래 될 조건이 충족됨
                                             </td>
                                         </tr>                                  
                                         <tr>
                                             <td class="graphicElement">
                                                 <img src="images/instructions/did_not_come_from_the_left,right.png" alt="node"/>
                                             </td>
-                                            <td class="meaning">Did not come from left/<wbr/>right child</td>
+                                            <td class="meaning">왼쪽/<wbr/>오른쪽 자식에서 유리되지않음</td>
                                             <td>
-                                                As previous, but the condition is not satisfied.
+                                                왼쪽/오른쪽 자식에서 유래 될 조건이 충족되지않음
                                             </td>
                                         </tr>                                                                  
                                         <tr>
