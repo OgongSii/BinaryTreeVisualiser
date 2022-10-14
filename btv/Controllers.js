@@ -88,7 +88,7 @@ btv.AbstractController = function(controlsDiv, treeDiv) {
     '<button id="playPauseButton">Play</button>' +
     '<button id="skipForwardButton">Skip Forward</button>' +
     '<button id="nextButton">Next</button>' +
-    '<input id="continuouslyCheckbox" type="checkbox" checked="checked"/><label for="continuouslyCheckbox">Continuously</label>' +
+    '<input id="continuouslyCheckbox" type="checkbox" checked="checked"/><label for="continuouslyCheckbox">차례로 재생</label>' +
     '</div>' +
 
     '<div class="item">' +
@@ -619,7 +619,7 @@ btv.BinarySearchTreeController = function(controlsDiv, treeDiv) {
 
 '<div class="item">' + 
 '<form id="BSTRandomBSTreeForm" action="javascript:btv.controller.randomBSTreeButton()">' +
-'<input id="BSTRandomBSTreeButton" type="submit" value="Random BSTree"/> ' +
+'<input id="BSTRandomBSTreeButton" type="submit" value="랜덤 검색트리생성"/> ' +
 '최소: <input id="BSTRandomBSTreeMinText" type="text" value="0" size="1"/> ' +
 '최대: <input id="BSTRandomBSTreeMaxText" type="text" value="99" size="1"/>' +
 '</form>' +
@@ -627,63 +627,63 @@ btv.BinarySearchTreeController = function(controlsDiv, treeDiv) {
 
 '<div class="item">' + 
 '<form id="BSTInsertForm" action="javascript: btv.controller.insertButton()">' +
-'<input id="BSTInsertButton" type="submit" value="Insert"/> ' +
+'<input id="BSTInsertButton" type="submit" value="삽입"/> ' +
 '값: <input id="BSTInsertText" type="text" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTFindForm" action="javascript:btv.controller.findButton()">' +
-'<input id="BSTFindButton" type="submit" value="Find"/> ' +
+'<input id="BSTFindButton" type="submit" value="탐색"/> ' +
 '값: <input id="BSTFindText" type="text" size="1"/>' +
 '</form>' +    
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTDeleteForm" action="javascript:btv.controller.deleteButton()">' +
-'<input id="BSTDeleteButton" type="submit" value="Delete"/> 선택된 노드' +
+'<input id="BSTDeleteButton" type="submit" value="삭제"/> 선택된 노드' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetMaxForm" action="javascript:btv.controller.getMaxButton()">' +
-'<input id="BSTGetMaxButton" type="submit" value="Get Max"/> 선택된 트리(서브) ' +
+'<input id="BSTGetMaxButton" type="submit" value="노드의 최대값"/> 선택된 트리(서브) ' +
 '</form>' +  
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetMinForm" action="javascript:btv.controller.getMinButton()">' +
-'<input id="BSTGetMinButton" type="submit" value="Get Min"/> 선택된 트리(서브) ' +
+'<input id="BSTGetMinButton" type="submit" value="노드의 최소값"/> 선택된 트리(서브) ' +
 '</form>' +      
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetPredecessorForm" action="javascript:btv.controller.getPredecessorButton()">' +
-'<input id="BSTGetPredecessorButton" type="submit" value="Get Predecessor"/> 선택된 노드' +
+'<input id="BSTGetPredecessorButton" type="submit" value="전임자 찾기"/> 선택된 노드' +
 '</form>' +    
 '</div>' + 
 
 '<div class="item">' + 
 '<form id="BSTGetSuccessorForm" action="javascript:btv.controller.getSuccessorButton()">' +
-'<input id="BSTGetSuccessorButton" type="submit" value="Get Successor"/> 선택된 노드' +
+'<input id="BSTGetSuccessorButton" type="submit" value="후임자 찾기"/> 선택된 노드' +
 '</form>' +
 '</div>' + 
 
 '<div class="item">' + 
 '<form id="BSTToPreorderArrayForm" action="javascript:btv.controller.toPreorderArrayButton()">' +
-'<input id="BSTToPreorderArrayButton" type="submit" value="To Preorder Array"/>' +
+'<input id="BSTToPreorderArrayButton" type="submit" value="노드를 전위 배열로 정렬"/>' +
 '</form>' +
 '</div>' + 
 
 '<div class="item">' + 
 '<form id="BSTToInorderArrayForm" action="javascript:btv.controller.toInorderArrayButton()">' +
-'<input id="BSTToInorderArrayButton" type="submit" value="To Inorder Array"/> (배열 정렬)' +
+'<input id="BSTToInorderArrayButton" type="submit" value="노드를 순서대로 정렬"/> (배열 정렬)' +
 '</form>' +
 '</div>' + 
 
 '<div class="item">' + 
 '<form id="BSTToPostorderArrayForm" action="javascript:btv.controller.toPostorderArrayButton()">' +
-'<input id="BSTToPostorderArrayButton" type="submit" value="To Postorder Array"/>' +
+'<input id="BSTToPostorderArrayButton" type="submit" value="노드를 후위 배열로 정렬"/>' +
 '</form>' +
 '</div>';
 }
@@ -975,7 +975,7 @@ btv.BinaryHeapController = function(controlsDiv, treeDiv) {
 
 '<div class="item">' + 
 '<form id="BHRandomHeapForm" action="javascript:btv.controller.randomBHeapButton()">' +
-'<input id="BHRandomHeapButton" type="submit" value="Random BHeap"/> ' +
+'<input id="BHRandomHeapButton" type="submit" value="랜덤 힙생성"/> ' +
 '최소: <input id="BHRandomHeapMinText" type="text" value="0" size="1"/> ' +
 '최대: <input id="BHRandomHeapMaxText" type="text" value="99" size="1"/>' +
 '</form>' +
@@ -983,37 +983,37 @@ btv.BinaryHeapController = function(controlsDiv, treeDiv) {
 
 '<div class="item">' + 
 '<form id="BHBuildHeapForm" action="javascript:btv.controller.buildHeapButton()">' +
-'<input id="BHBuildHeapButton" type="submit" value="Build Heap"/> 배열: <input id="BHArrayText" type="text" size="10"/>' +
+'<input id="BHBuildHeapButton" type="submit" value="힙 생성"/> 배열: <input id="BHArrayText" type="text" size="10"/>' +
 '</form>' + 
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHInsertForm" action="javascript: btv.controller.insertButton()">' +
-'<input id="BHInsertButton" type="submit" value="Insert"/> 값: <input id="BHInsertText" type="text" size="1"/>' +
+'<input id="BHInsertButton" type="submit" value="삽입"/> 값: <input id="BHInsertText" type="text" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHDeleteForm" action="javascript:btv.controller.deleteButton()">' +
-'<input id="BHDeleteButton" type="submit" value="Delete"/> 선택된 노드' +
+'<input id="BHDeleteButton" type="submit" value="삭제"/> 선택된 노드' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHExtractMaxForm" action="javascript:btv.controller.extractMaxButton()">' +
-'<input id="BHExtractMaxButton" type="submit" value="Extract Max"/>' +
+'<input id="BHExtractMaxButton" type="submit" value="노드의 최대값 추출"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHGetMaxForm" action="javascript:btv.controller.getMaxButton()">' +
-'<input id="BHGetMaxButton" type="submit" value="Get max"/>' +
+'<input id="BHGetMaxButton" type="submit" value="최대값 노드 가져오기"/>' +
 '</form>' +  
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHHeapSortForm" action="javascript:btv.controller.heapSortButton()">' +
-'<input id="BHHeapSortButton" type="submit" value="Heap Sort"/>' +
+'<input id="BHHeapSortButton" type="submit" value="힙 정렬"/>' +
 '</form>' + 
 '</div>';
 }
