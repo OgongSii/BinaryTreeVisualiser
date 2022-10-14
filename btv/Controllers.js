@@ -92,11 +92,11 @@ btv.AbstractController = function(controlsDiv, treeDiv) {
     '</div>' +
 
     '<div class="item">' +
-    'Speed of move: <div id="moveSpeedSlider"></div>' + 
+    '이동 속도: <div id="moveSpeedSlider"></div>' + 
     '</div>' +
     
     '<div class="item">' +
-    'Duration of a step: <div id="stepDurationSlider"></div>' + 
+    '계산 속도: <div id="stepDurationSlider"></div>' + 
     '</div>';
 
     // jQuery UI
@@ -620,52 +620,52 @@ btv.BinarySearchTreeController = function(controlsDiv, treeDiv) {
 '<div class="item">' + 
 '<form id="BSTRandomBSTreeForm" action="javascript:btv.controller.randomBSTreeButton()">' +
 '<input id="BSTRandomBSTreeButton" type="submit" value="Random BSTree"/> ' +
-'min: <input id="BSTRandomBSTreeMinText" type="text" value="0" size="1"/> ' +
-'max: <input id="BSTRandomBSTreeMaxText" type="text" value="99" size="1"/>' +
+'최소: <input id="BSTRandomBSTreeMinText" type="text" value="0" size="1"/> ' +
+'최대: <input id="BSTRandomBSTreeMaxText" type="text" value="99" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTInsertForm" action="javascript: btv.controller.insertButton()">' +
 '<input id="BSTInsertButton" type="submit" value="Insert"/> ' +
-'value: <input id="BSTInsertText" type="text" size="1"/>' +
+'값: <input id="BSTInsertText" type="text" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTFindForm" action="javascript:btv.controller.findButton()">' +
 '<input id="BSTFindButton" type="submit" value="Find"/> ' +
-'value: <input id="BSTFindText" type="text" size="1"/>' +
+'값: <input id="BSTFindText" type="text" size="1"/>' +
 '</form>' +    
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTDeleteForm" action="javascript:btv.controller.deleteButton()">' +
-'<input id="BSTDeleteButton" type="submit" value="Delete"/> selected node' +
+'<input id="BSTDeleteButton" type="submit" value="Delete"/> 선택된 노드' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetMaxForm" action="javascript:btv.controller.getMaxButton()">' +
-'<input id="BSTGetMaxButton" type="submit" value="Get Max"/> of selected (sub)tree ' +
+'<input id="BSTGetMaxButton" type="submit" value="Get Max"/> 선택된 트리(서브) ' +
 '</form>' +  
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetMinForm" action="javascript:btv.controller.getMinButton()">' +
-'<input id="BSTGetMinButton" type="submit" value="Get Min"/> of selected (sub)tree ' +
+'<input id="BSTGetMinButton" type="submit" value="Get Min"/> 선택된 트리(서브) ' +
 '</form>' +      
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BSTGetPredecessorForm" action="javascript:btv.controller.getPredecessorButton()">' +
-'<input id="BSTGetPredecessorButton" type="submit" value="Get Predecessor"/> of selected node' +
+'<input id="BSTGetPredecessorButton" type="submit" value="Get Predecessor"/> 선택된 노드' +
 '</form>' +    
 '</div>' + 
 
 '<div class="item">' + 
 '<form id="BSTGetSuccessorForm" action="javascript:btv.controller.getSuccessorButton()">' +
-'<input id="BSTGetSuccessorButton" type="submit" value="Get Successor"/> of selected node' +
+'<input id="BSTGetSuccessorButton" type="submit" value="Get Successor"/> 선택된 노드' +
 '</form>' +
 '</div>' + 
 
@@ -677,7 +677,7 @@ btv.BinarySearchTreeController = function(controlsDiv, treeDiv) {
 
 '<div class="item">' + 
 '<form id="BSTToInorderArrayForm" action="javascript:btv.controller.toInorderArrayButton()">' +
-'<input id="BSTToInorderArrayButton" type="submit" value="To Inorder Array"/> (To Sorted Array)' +
+'<input id="BSTToInorderArrayButton" type="submit" value="To Inorder Array"/> (배열 정렬)' +
 '</form>' +
 '</div>' + 
 
@@ -976,26 +976,26 @@ btv.BinaryHeapController = function(controlsDiv, treeDiv) {
 '<div class="item">' + 
 '<form id="BHRandomHeapForm" action="javascript:btv.controller.randomBHeapButton()">' +
 '<input id="BHRandomHeapButton" type="submit" value="Random BHeap"/> ' +
-'min: <input id="BHRandomHeapMinText" type="text" value="0" size="1"/> ' +
-'max: <input id="BHRandomHeapMaxText" type="text" value="99" size="1"/>' +
+'최소: <input id="BHRandomHeapMinText" type="text" value="0" size="1"/> ' +
+'최대: <input id="BHRandomHeapMaxText" type="text" value="99" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHBuildHeapForm" action="javascript:btv.controller.buildHeapButton()">' +
-'<input id="BHBuildHeapButton" type="submit" value="Build Heap"/> array: <input id="BHArrayText" type="text" size="10"/>' +
+'<input id="BHBuildHeapButton" type="submit" value="Build Heap"/> 배열: <input id="BHArrayText" type="text" size="10"/>' +
 '</form>' + 
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHInsertForm" action="javascript: btv.controller.insertButton()">' +
-'<input id="BHInsertButton" type="submit" value="Insert"/> value: <input id="BHInsertText" type="text" size="1"/>' +
+'<input id="BHInsertButton" type="submit" value="Insert"/> 값: <input id="BHInsertText" type="text" size="1"/>' +
 '</form>' +
 '</div>' +
 
 '<div class="item">' + 
 '<form id="BHDeleteForm" action="javascript:btv.controller.deleteButton()">' +
-'<input id="BHDeleteButton" type="submit" value="Delete"/> selected node' +
+'<input id="BHDeleteButton" type="submit" value="Delete"/> 선택된 노드' +
 '</form>' +
 '</div>' +
 
